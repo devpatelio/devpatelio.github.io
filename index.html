@@ -1,10 +1,358 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
+<head>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1h, height=device-height" />
+  <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  
 
-<body>
-<h1>Hey There!</h1>
-<p>My name is Dev Patel: Programmer, Designer, Roboticist, Entrepreneur, but most importantly, a student. Check out my github <a href="https://github.com/devpatelio"> here! </a></p>
-</body>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 
-</html>
+
+</head>
+<body style="background-color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; width: 100%; overflow-x: hidden">
+  <div class="header">
+    <span class="navigator" style="font-size:35px; cursor:pointer; left: 0; padding-left: 0.5vw;" onclick="openNav()">&#127764;</span>
+    <span class="navigator" style="font-size:35px; cursor:pointer; right: 0; float: right; padding-right: 0.5vw;" onclick="openNav()">&#127762;</span>
+    <h4 style="color: rgb(56, 56, 56); position: absolute; left: 7vh; top: -0.5vh; font-size: 17px; font-family: 'Roboto Mono', cursive;">devpatel.io</h4>
+
+    
+    <div style="background-color: black; width: 93%; margin-left: 6vh; height: 88.5vh; margin-top: 2vh;">
+
+     
+    <div class="phone-body">
+        <!-- <img src="https://images.unsplash.com/photo-1539842200879-33abaf3c8e35?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+        style="width: 100vw; height: 100vh; opacity: 0.8; z-index: -2;"> -->
+            <img class="vector-image"src="/Users/devpatelio/Downloads/20201010-180506-Original (1).png">
+            <!-- <div style="width: 50vw; height: 50vw; border: 5px solid white; position: absolute; top: 20px; left: 23.5vw; z-index: 1;"></div> -->
+        <h1 class="title" >dev patel</h1>
+    </div>
+
+     <div class="cornerstyle" style="position: absolute; left: 0px;">
+      <div id="trapezoid" style="transform: rotate(180deg);"></div>
+      <div id="trapezoid" style="transform: rotate(90deg);left: -26px; top: 149px;"></div>
+    </div> 
+
+    <div class="cornerstyle" style="position: absolute; bottom: 60px; right: 5px; transform: rotate(-180deg);">
+      <div id="trapezoid" style="transform: rotate(180deg);"></div>
+      <div id="trapezoid" style="transform: rotate(90deg); left: -26px; top: 149px;"></div>
+    </div> 
+    <div style="position: relative; top: 3vh;">
+    <h1 class="maintitle"> Solving the problems <a style="background-color:none;"> that will push us forward </a> <a style="color: rgb(173, 173, 173);"> <br> Developing the skills <a style="background-color: none; color: rgb(173, 173, 173);"> to solve those problems </a> </a></h1>
+    <div class="button-box" style="color: white; border-color: white; left: 10vh; top: 74vh;">
+      Check out my notion
+    </div>  
+    <div class="button-box" style=" left: 33vh; top: 69.2vh;">
+      My past experience
+    </div> 
+    <div class="button-box" style="color: rgb(146, 146, 146); border-color: rgb(146, 146, 146); left: 57vh; top: 64.3vh;">
+      See my manifesto
+    </div>  
+    </div> 
+
+    <!-- <div class="vertical-bar">
+      <h3 style="font-size: 16px; width: 20vw; margin-left: 4vw; margin-top: 6vh; font-weight: 900; font-family: Roboto Mono;"> Innovating X Learning</h3>
+      <h3 class="subheader" style=" margin-left: 4vw; margin-top: 32vh;">About</h3>
+      <h3 class="subheader" style=" margin-left: 4vw; margin-top: 1.5vh;">Projects</h3>
+      <h3 class="subheader" style=" margin-left: 4vw; margin-top: 2.5;">Thoughts</h3>
+      <h3 class="subheader" style=" margin-left: 4vw; margin-top: 2.5;">Blogging</h3>
+      <h3 class="subheader" style=" margin-left: 4vw; margin-top: 2.5;">Socials</h3>
+      <div class="socials">
+          <a style="color: black; background-color: white; border-collapse: separate; border-radius: 50%; padding: 2px; font-size: 27px; position: relative; top: -2px; margin-left: 4px;" class="fa fa-twitter"></a>
+          <a style="border-collapse: separate; border-radius: 50%; padding: 5px; font-size: 35px; margin-top: 15px; margin-left: 4px;" class="fa fa-github"></a>
+          <a style="color: black; background-color: white; border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 18px; position: relative; top: -6px; margin-left: 4px;" class="fa fa-linkedin"></a>
+          <a style="color: black; background-color: white; border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 18px; position: relative; top: -6px; margin-left: 7px;" class="fa fa-google"></a>
+      </div>
+  </div> -->
+
+
+  
+  
+  </div>
+
+
+  </div>
+<!-- 
+  <h3 style="letter-spacing: 4px; color: black; font-size: 0.80vw; position: absolute; transform: rotate(-90deg); left: 0px; bottom: 88vh;">INNOVATOR &nbsp &nbsp &nbsp &nbsp DREAMER  &nbsp &nbsp &nbsp &nbsp ENTREPRENEUR  &nbsp &nbsp &nbsp &nbsp BUILDER  &nbsp &nbsp &nbsp &nbsp ENGINEER  &nbsp &nbsp &nbsp &nbsp THINKER  &nbsp &nbsp &nbsp &nbsp </h3>
+  <h3 style="letter-spacing: 4px; color: black; font-size: 0.80vw; position: absolute; transform: rotate(90deg); right: 2px; bottom: 7.5vh;">INNOVATOR &nbsp &nbsp &nbsp &nbsp DREAMER  &nbsp &nbsp &nbsp &nbsp ENTREPRENEUR  &nbsp &nbsp &nbsp &nbsp BUILDER  &nbsp &nbsp &nbsp &nbsp ENGINEER  &nbsp &nbsp &nbsp &nbsp THINKER  &nbsp &nbsp &nbsp &nbsp </h3> -->
+
+  <div style="background-color: grey; height: 1px; width: 160vh; margin-left: auto; margin-right: auto; margin-top: 3vh;"></div>
+
+  <div class="section1" style="position: absolute; ">
+    <h1 class="pagetitle"> I'm an <a class="highlighter">innovator, thinker, and builder </a> looking to change the world through emerging technology. </h1>
+    <p class="bodytext"> <a style="color: black; font-size: 21px; color: rgb(14, 56, 133);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et augue vel mauris blandit pharetra. Donec iaculis vulputate est, nec convallis justo. Nullam fringilla libero sed malesuada faucibus. </a> Duis non rutrum arcu, ut porttitor purus. Donec ut mattis felis, et egestas ante. Sed ut ornare lacus. Suspendisse in purus est.
+      <br><br> Cras vitae ultricies libero. Nulla vel pharetra nibh, cursus viverra ex. Fusce accumsan, ipsum at condimentum efficitur, est libero sollicitudin purus, egestas dapibus metus velit a lacus. Pellentesque tempor efficitur felis eu imperdiet. Nulla sem diam, cursus vitae gravida eget, porta vel neque. Praesent tincidunt suscipit elit, vitae cursus odio mattis sed. Etiam id lacus sit amet tellus tristique mattis.
+      <br><br> Cras vitae ultricies libero. Nulla vel pharetra nibh, cursus viverra ex. Fusce accumsan, ipsum at condimentum efficitur, est libero sollicitudin purus, egestas dapibus metus velit a lacus. Pellentesque tempor efficitur felis eu imperdiet. Nulla sem diam, cursus vitae gravida eget, porta vel neque. Praesent tincidunt suscipit elit, vitae cursus odio mattis sed. Etiam id lacus sit amet tellus tristique mattis.Cras vitae ultricies libero. Nulla vel pharetra nibh, cursus viverra ex. Fusce accumsan, ipsum at condimentum efficitur, est libero sollicitudin purus, egestas dapibus metus velit a lacus. Pellentesque tempor efficitur felis eu imperdiet. 
+    </p>
+
+    <div style="position: absolute; right: 0; margin-right: 1570px; margin-top: +50px;">
+      <div class="image-focus">
+        <img style="width: 500px; position: relative; right: 200px;" src="https://images.unsplash.com/photo-1457364983758-510f8afa9f5f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80">
+      </div>
+
+      <div class="image-focus" style="top: -93vh; left: 117vh;">
+        <img style="width: 500px; position: relative; right: 140px;" src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2552&q=80">
+      </div>
+      
+      <div class="image-focus" style="top: -120vh; left: 143vh;">
+        <img style="width: 300px;" src="https://images.unsplash.com/photo-1501862700950-18382cd41497?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80">
+      </div>
+      <div class="image-focus" style="top: -112vh; left: 143vh;">
+        <img style="width: 200px;" src="https://images.unsplash.com/photo-1582018339960-bcf41139a252?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1233&q=80">
+      </div>
+
+      <div class="image-focus" style="top: -147vh; left: 117vh;">
+        <img style="width: 500px;" src="https://images.unsplash.com/photo-1451188502541-13943edb6acb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2800&q=80">
+      </div>
+      <div class="image-focus" style="top: -172vh; left: 92vh;">
+        <img style="width: 240px;" src="https://images.unsplash.com/photo-1515272751348-25380c6c1f9c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80">
+      </div>
+    </div>
+    <div style="background-color: grey; height: 1px; width: 160vh; margin-left: auto; margin-right: auto; margin-top: 25vh;"></div>
+
+
+
+
+
+
+
+<!--     
+    <div>
+      <span style="font-size: 30px; color: red; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: red;" src="https://pytorch.org/assets/images/pytorch-logo.png">
+    </div>
+    <div>
+      <span style="font-size: 30px; color: #306998; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: #306998;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png">
+    </div>
+    <div>   
+      <span style="font-size: 30px; color: #0078d7; position: absolute; left: 20px;"> &#9679;</span>
+         <img class='logo' style="border-color: #0078d7;" src="https://user-images.githubusercontent.com/674621/71187801-14e60a80-2280-11ea-94c9-e56576f76baf.png">
+    </div>
+    <div>
+      <span style="font-size: 30px; color: grey; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: grey;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/1200px-Ethereum-icon-purple.svg.png">
+    </div>
+
+    <div> 
+      <span style="font-size: 30px; color: black; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color:black;" src="https://docs.soliditylang.org/en/v0.7.0/_images/logo.svg">
+    </div>
+    
+    <div>    
+      <span style="font-size: 30px; color: orange; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: orange;" src="https://raw.githubusercontent.com/jupyter/design/master/logos/Favicon/favicon.ico">
+    </div>
+
+    <div>   
+      <span style="font-size: 30px; color: lightblue; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: lightblue;" src="https://cdn.worldvectorlogo.com/logos/react.svg">
+    </div>
+    <div> 
+      <span style="font-size: 30px; color: black; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: black;" src="https://image.flaticon.com/icons/png/512/25/25231.png">
+    </div>
+    <div>   
+      <span style="font-size: 30px; color:  rgb(28, 100, 158); position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: rgb(28, 100, 158);" src="https://image.flaticon.com/icons/png/512/174/174857.png">
+    </div>
+    <div>  
+      <span style="font-size: 30px; color:purple; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: purple;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png">
+    </div>
+    <div>   
+      <span style="font-size: 30px; color: green; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: green;" src="https://assets.stickpng.com/images/5841c47ba6515b1e0ad75aa3.png">
+    </div>
+    <div>   
+      <span style="font-size: 30px; color: rgb(38, 63, 117);; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: rgb(38, 63, 117);" src="https://uc340b0dd09ac09baf11bb5a0f09.previews.dropboxusercontent.com/p/thumb/ABAYTEA4vu-DXlKRqNvng7FK1HZp-OC-BnbHFuQKyT8gyu-qVvwCCjJX3ks6cZqEEqFwsZeZOieyntdqbdZ5d7o6g1WMzFyXZYfztn1t0UrmuPu43xm7r-4di-1O4de2hcr7f1W9yz0S1I70AnjCBE9Y7N_3YOeRTGLJgMgQsUw5dLI94JMjw4IoiOHw-xj5TuFcJbSAE1Jwg2AW62mTm96jQWen0Ro01T2ido0qzV26hUtIDMBbyDcOLNwSwL1VAklC5vpxfSScX2FotWiDoKlwcGBMOldy17EbQA7QHSWlcSOeZFUOZm-VGaqSZ1WWPzyVMBMAzkdY6EXM-PSadly3NAEBs7lPfJrPeXFFBk4Jng/p.png?fv_content=true&size_mode=5">
+    </div>
+    <div>    
+      <span style="font-size: 30px; color: rgb(52, 187, 52); position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: rgb(52, 187, 52);" src="https://d2guulkeunn7d8.cloudfront.net/assets/beetstrap/brand/carrotlogo-9bdddeb12aa0eaae006fc99f857caa4f5e20ea5aafdd2aa8b7420fdc4d6e8aeb.png">
+    </div>
+    <div>     
+      <span style="font-size: 30px; color: darkorange; position: absolute; left: 20px;"> &#9679;</span>
+      <img class='logo' style="border-color: darkorange;" src="      https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png">
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <h4 style="font-weight: 500; color: white;"><a style="color: grey">skillset/</a>pytorch</h4> -->
+  </div>
+
+
+<!-- <div class="wave-divider"></div> -->
+<div class="section2">
+  <div style="margin-top: -15vh;">
+
+  <h1 class="pagetitle" style="top: 20vh; color: white; font-size: 50px; font-weight: 900;"> Shokunin; <a style="color: rgb(173, 173, 173); font-weight: 300;">the relentless pursuit of perfection in everything you do</a></h1>
+  <p class="bodytext" style="left: 85vh; top: 6.5vh; color: white; font-size: 20px; width: 80vh;">Our first-of-its-kind API can be applied to any language task, and currently serves millions of production requests each day. Our first-of-its-kind API can be applied to any language task, and currently serves millions of production requests each day.</p>
+
+  <div style=" display: block; margin-left: 3vw;">
+    <img style = "width: 55vh; height: auto; left: 50vh; position: relative; top: 15vh; padding: 40px; background-color: rgb(36, 36, 36); opacity: 0.6;" src="/Users/devpatelio/Downloads/MOSHED-2020-12-31-18-47-35.gif">
+      <div class="supporting-text">
+        <h1 style="font-size: 100px; font-weight: 900; color: white; position: relative; left: 63vh; top: -20vh; text-shadow: 2px 2px 2px 2px #3b1909;">Doktor I</h2>
+        <h2 style="position: relative; top: -8vh; left: 50.5vh; font-weight: 300;">Using CNNs to Accurately Diagnose Diabetic Retinopathy</h3>
+        <h2 style="position: relative; color: rgb(156, 156, 156); top: -8.5vh; left: 50.5vh; font-weight: 300; font-size:18px; width: 63vh; font-family: Roboto Mono; "> Nulla vel pharetra nibh, cursus viverra ex. Fusce accumsan, ipsum at condimentum efficitur, est libero sollicitudin purus, egestas dapibus metus velit a lacus.y</h3>
+      </div>
+  </div>  
+
+  <div style="display: block; margin-top: -81vh; margin-left: -24vw;">
+    <img style = "width: 38vh; height: auto; left: 50vh; position: relative; top: 15vh; padding: 25px; background: rgba(7, 64, 82, 0.596);
+    opacity: 1;" src="https://media0.giphy.com/media/5xaOcLsnhsb0ZoS189q/source.gif">
+      <div class="supporting-text">
+        <h1 style="font-size: 40px; font-weight: 700; color: white; position: relative; left: 57vh; top: -2vh; ext-shadow: 2px 2px 2px 2px #3b1909;">Project Pheno</h2>
+        <h2 style="position: relative; top: 7vh; font-size: 23px; left: 50.5vh; font-weight: 300;">Deep Learning and R.G.D Early Detection</h3>
+        <h2 style="position: relative; top: 7vh; left: 50.5vh; font-weight: 300; font-size:18px; width: 42vh; font-family: Roboto Mono; color: rgb(156, 156, 156); "> Nulla vel pharetra nibh, cursus viverra ex. Fusce accumsan, ipsum at condimentum efficitur, est libero sollicitudin purus, egestas dapibus metus velit a lacus.y</h3>
+      </div>
+  </div>  
+
+  <div style="display: block; margin-top: -56vh; margin-left: 42.5vw;">
+    <img style = "width: 36vh; height: auto; left: 50vh; position: relative; top: 15vh; padding: 20px; 
+    opacity: 0.4;" src="  https://content.fortune.com/wp-content/uploads/2020/09/09.18.20.Forex-Traders.gif?w=640">
+      <div class="supporting-text">
+        <h1 style="font-size: 50px; font-weight: 700; color: white; position: relative; left: 62vh; top: -4vh; ext-shadow: 2px 2px 2px 2px #3b1909;">PlutuS</h2>
+          <h2 style="position: relative; top: 2vh; left: 52vh; font-weight: 300; width: 42vh;">Automated Trading w. Recurrent-NN</h3>
+          <h2 style="position: relative; top: 2vh; left: 52vh; font-weight: 300; font-size:18px; width: 38vh; font-family: Roboto Mono; color: rgb(156, 156, 156);"> Nulla vel pharetra nibh, cursus viverra ex. Fusce accumsan, ipsum at condimentum efficitur, est libero sollicitudin purus, egestas dapibus metus velit a lacus.y</h3>
+      </div>
+  </div>  
+
+
+
+  <div style="display: block; margin-top: 9vh; margin-left: -23.8vw;">
+    <img style = "width: 78vh; height: auto; left: 50vh; position: relative; top: 15vh; padding: 20px; opacity: 1; background-color: rgb(111, 204, 58);" src="https://i.stack.imgur.com/cJyvn.png">
+      <div class="supporting-text">
+        <h1 style="font-size: 90px; font-weight: 900; color: white; position: relative; left: 71vh; top: -13vh; ext-shadow: 2px 2px 2px 2px #272727;">CPUMine</h2>
+          <h2 style="position: relative; top: -40vh; left: 135vh; font-weight: 300; width: 16vw;">Automated CPU Mining for TestEther on the Rnet</h3>
+          <h2 style="position: relative; top: -40vh; left: 135vh; font-weight: 300; font-size:18px; width: 16vw;  font-family: Roboto Mono; color: rgb(156, 156, 156); "> Nulla vel pharetra nibh, cursus viverra ex. Fusce accumsan, ipsum at condimentum efficitur, est libero sollicitudin purus, egestas dapibus metus velit a lacus.y est libero sollicitudin purus, egestas dapibus metus velit a lacus.</h3>
+      </div>
+  </div>   
+
+  <div style="display: block; margin-left: 43.4vw; margin-top: -107vh;">
+    <img style = "width: 29vh; height: auto; left: 50vh; position: relative; top: 15vh; padding: 40px; opacity: 1; background-color: rgb(20, 20, 20);" src="https://upload.wikimedia.org/wikipedia/commons/4/48/Cardiac_mri_ani_sagittal_bionerd.gif">
+      <div class="supporting-text">
+        <h1 style="font-size: 50px; font-weight: 700; color: white; position: relative; left: 58vh; top: -13vh; ext-shadow: 2px 2px 2px 2px #272727;">Cormeum</h2>
+          <h2 style="position: relative; top: 5vh; left: 50vh; font-weight: 300; width: 42vh;">Heart Diease with Neural Networks</h3>
+          <h2 style="position: relative; top: 5vh; left: 50vh; font-weight: 300; font-size:18px; width: 38vh; font-family: Roboto Mono; color: rgb(156, 156, 156);"> Nulla vel pharetra nibh, cursus viverra ex. Fusce accumsan, ipsum at condimentum efficitur, est libero sollicitudin purus, egestas dapibus metus velit a lacus.y</h3>
+      </div>
+  </div>   
+  
+
+</div>
+
+</div>
+
+<div class="section3">
+  
+    
+    
+
+  <div class="footer" style="color: rgb(179, 179, 179); background-color: rgb(0, 0, 0); width: 110%; margin-top: -15vh; height: 29vh; margin-left: -1vw;">
+
+    
+    <h1 style="font-weight: 300; margin-left: 5.5vw; padding-top: 5vh; font-size: 24px; margin-top: 1vh; font-family: Roboto Mono;"><a style="font-weight: 900;  color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Thanks for checking me out.</a>  Now, make your move :)</h1>
+    <div style="margin-left: 48vw; margin-top: -6vh;">
+        <a style="border-collapse: separate; border-radius: 50%; padding: 2px; font-size: 40px; position: relative; margin-left: 4px;" class="fa fa-twitter-square"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 5px; font-size: 40px; margin-top: 9px; margin-left: 1vw;" class="fa fa-github"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 35px; position: relative; top: -1px; margin-left: 1vw;" class="fa fa-linkedin-square"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-envelope"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-instagram"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-angellist"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-spotify"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-reddit-square"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-bitcoin"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-slack"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-wikipedia-w"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-twitch"></a>
+        <a style="border-collapse: separate; border-radius: 50%; padding: 7px; font-size: 30px; position: relative; top: -3px; margin-left: 1vw;" class="fa fa-medium"></a>
+    </div>
+
+    <table style="width:98vw; margin-left: 5.5vw; margin-top: 2vh;">
+      <colgroup>
+          <col span="1" style="width: 20%;">
+          <col span="2" style="width: 20%;">
+          <col span="3" style="width: 20%;">
+          <col span="4" style="width: 20%;">
+          <col span="5" style="width: 20%;">
+      </colgroup>
+      <!-- Put <thead>, <tbody>, and <tr>'s here! -->
+      <tbody>
+          <tr>
+              <td class="bold-category">Daily Updates</td>
+              <td class="bold-category">Philosophy</td>
+              <td class="bold-category">Mental Models</td>
+              <td class="bold-category">External Meets</td>
+              <td class="bold-category">Book Review</td>
+
+          </tr>
+          <tr>
+              <td class="bold-category">Deep Learning</td>
+              <td class="bold-category">Entrepreneurship</td>
+              <td class="bold-category">Biotechnology</td>
+              <td class="bold-category">Markets and Finance</td>
+              <td class="bold-category">Mathematics</td>
+          </tr>
+      </tbody>
+  </table>
+
+<div style="margin-top: 2vh; opacity: 0.3;;">
+<div>
+    <p class="image-text-1" style="margin-left: 5.6vw;">dev patel</p>
+    <p class="image-text-2">dev patel</p>
+    <p class="image-text-1">dev patel</p>
+    <p class="image-text-2">dev patel</p>
+    <p class="image-text-1">dev patel</p>
+    <p class="image-text-2">dev patel</p>
+    <p class="image-text-1">dev patel</p>
+    <p class="image-text-2">dev patel</p>
+    <p class="image-text-1">dev patel</p>
+    <p class="image-text-2">dev patel</p>
+    <p class="image-text-1">dev patel</p>
+    <p class="image-text-2">dev patel</p>
+    <p class="image-text-1">dev patel</p>
+    <p class="image-text-2">dev patel</p>
+    <p class="image-text-1">dev patel</p>
+    <p class="image-text-2">dev patel</p>
+</div>
+
+   
+</div>
+    
+
+
+
+
+</div>
+
+
+</div>
+
+
+<script>
+
+function openNav() {
+  window.location.replace('navigator.html')
+}
+</script>
+
+</html> 
