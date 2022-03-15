@@ -1,0 +1,110 @@
+body{
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 2%;
+    padding:0;
+    color: white;
+}
+ 
+.home-page{
+    background-color: None;
+}
+.great-big-title{
+    /* font-family: 'Major Mono Display', monospace; */
+    /* font-family: 'Darker Grotesque', sans-serif; */
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Playfair Display', serif; */
+    color: white;
+    font-size: 14px;
+   
+}
+ 
+.socials{
+    /* font-family: 'Playfair Display', serif; */
+    color: rgb(231, 177, 0);
+    /* position: relative; */
+    font-size: 11px;
+}
+ 
+ 
+.great-small-quote{
+ 
+}
+.great-project-view{
+ 
+}
+.great-focus{
+ 
+}
+.great-seo{
+ 
+}
+ 
+.nav li{
+    /* font-family: 'Noto Serif Display', serif; */
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+}
+ 
+.nav li a{
+    color: white;
+}
+ 
+.nav{
+    margin-left: -3%;
+}
+ 
+.profile{
+    height: auto;
+    width: 200px;
+    /* position: relative; */
+   
+    /* float: right; */
+}
+ 
+ 
+.foreground{
+    margin-top: -25%;
+    margin-left: 15%;
+    /* float: right; */
+}
+.terminal-cover{
+    width: 55%;
+}
+ 
+.caption{
+    font-size: 0.7rem;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-weight: 100;
+    max-width: 55%;
+   
+ 
+}
+ 
+.content{
+   
+    color: white;
+    float: left;
+ 
+}
+ 
+.title{
+    font-weight: 300;
+}
+ 
+.intro{
+    max-width: 55%;
+    margin-top: 0%;
+    float: left;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+ 
+.resume-point{
+    font-size: 0.7rem;
+    color:rgb(231, 177, 0);
+}

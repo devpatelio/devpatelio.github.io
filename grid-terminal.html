@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+ 
+    <style>
+ 
+        .body{
+            margin-left: 25%;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 230px auto;
+            margin-left: 25%;
+        }
+ 
+        .wrapper div{
+            background-color: black;
+            color: white;
+        }
+        .wrapper > div:nth-child(odd){
+            background: black;
+        }
+    </style>
+</head>
+ 
+ 
+<script type="text/javascript">
+    var imageURLs = [
+        "https://wallpaperaccess.com/full/1363480.jpg",
+        "https://www.companyofpainters.com/wp-content/uploads/2016/04/creation_of_adam_1510_cappella_sistina_vatican.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Raphael_School_of_Athens.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Peter_Paul_Rubens_-_The_Fall_of_Phaeton_%28National_Gallery_of_Art%29.jpg/800px-Peter_Paul_Rubens_-_The_Fall_of_Phaeton_%28National_Gallery_of_Art%29.jpg"
+   
+    ];
+ 
+    var imageDescriptions = [
+        "<i> The Romans in their Decadence </i> is a painting by the French artist Thomas Couture, first exhibited at the Paris Salon of 1847, a year before the 1848 Revolution which toppled the July Monarchy. It was the most highly praised work at the Salon. Reminiscent of the style of Raphael, it is typical of the French 'classic' style between 1850 and 1900. It now belongs to the Musée d'Orsay in Paris.[2] It was etched by Edmond Hédouin.",
+        "<i>The Creation of Adam</i> is a fresco painting by Italian artist Michelangelo, which forms part of the Sistine Chapel's ceiling, painted c. 1508–1512. It illustrates the Biblical creation narrative from the Book of Genesis in which God gives life to Adam, the first man. The fresco is part of a complex iconographic scheme and is chronologically the fourth in the series of panels depicting episodes from Genesis.",
+        "<i>The School of Athens</i> is one of a group of four main frescoes on the walls of the Stanza (those on either side centrally interrupted by windows) that depict distinct branches of knowledge. Each theme is identified above by a separate tondo containing a majestic female figure seated in the clouds, with putti bearing the phrases: 'Seek Knowledge of Causes', 'Divine Inspiration', 'Knowledge of Things Divine' (Disputa), 'To Each What Is Due'. Accordingly, the figures on the walls below exemplify philosophy, poetry (including music), theology, and justice.",
+        "<i>The Fall of Phaeton</i> is a painting by the Flemish master Peter Paul Rubens, featuring the ancient Greek myth of Phaeton (Phaethon), a recurring theme in visual arts. Rubens chose to depict the myth at the height of its action, with the thunderbolts hurled by Zeus to the right. The thunderbolts provide the light contrast to facilitate the display of horror on the faces of Phaeton, the horses and other figures while preserving the darkness of the event. "
+ 
+    ];
+ 
+ 
+    function getImageTag() {
+        var img = '<img class="terminal-cover" src=\"';
+        var randomIndex = Math.floor(Math.random() * imageURLs.length);
+        img += imageURLs[randomIndex];
+        img += '\" alt=\"Some alt text\"/>';
+ 
+        var descr =  '<p class="caption"> ';
+        descr += imageDescriptions[randomIndex];
+        descr += ' </p>';
+ 
+        document.write(img);
+        document.write(descr);
+    }
+ 
+ 
+</script>
+ 
+<html>
+    <body>
+        <div class="wrapper">
+            <div>
+                <img class="profile" src="https://avatars.githubusercontent.com/u/32529318?v=4">
+                <p class="great-big-title"> <strong style="text-decoration: underline"> Hello world.</strong> What is this world?</h1>
+                    <ul class="nav">
+                        <li> <a href="grid-terminal.html">terminal.</a></li>
+                        <li> <a href="grid-biotech.html">biotech.</a></li>
+                        <li>machine_learning.</li>
+                        <li>writing.</li>
+                        <li>reading.</li>
+                        <li>crypto.</li>
+                        <li>world_order.</li>
+                        <li>videos.</li>
+                        <li>crypto.</li>
+                        <li>brain_feed.</li>
+                        <li> <a href="index.html">registry.</a></li>
+                        <li> <a href="grid-portfolio.html">portfolio.</a></li>
+               
+                    </ul>
+ 
+                    <p> <a class="socials" href="https://github.com/devpatelio/devpatelio/blob/main/README.md">Github</a> | <a class="socials" href="mailto@hello.devpatel@gmail.com">Email</a> | <a class="socials" href="https://twitter.com/dev_elio">Twtr</a> | <a class="socials" href="https://www.instagram.com/devpatelio/">Instgrm</a> | <a class="socials" href="https://calendly.com/devpatel-scheduling/meet-me">Calendly</a></p>
+ 
+            </div>
+ 
+ 
+            <div style="margin-top: 5%; padding-left: 2%; color: white;">
+                <h3 class="title" style="font-size: 20px; font-weight: 200;">🌅 Dev Patel. </h3>
+                <p class="intro"> I've made it my mission in life to lead a tech revolution that can not just change the ideas and aspirations of society, but rather fundamentally alter the direction of humanity by demonstrating the effectiveness of crazy ideas. It's about doing the things that nobody has ever thought of, becoming the person that everyone needs to become, and orchestrating a future through tech to realize a vision that will benefit us all.
+                    Also by just having fun with it. It takes a good invention or product to bear new fruits and benefit someone's life, but it takes a movement to leave a long-lasting impact. To get to that position where I can act on these crazy ideas and discoveries, I need to take action in the real world and forge an idea of exactly what I want to change or where I want to leave an impact.
+                    <br><br>
+                    <i>Currently working on: </i> <strong style="color: rgb(241, 203, 178);">&nbsp mRNA Therapeutics</strong><br>
+                    <i>Currently working at: </i> <strong style="color: rgb(178, 195, 241);">&nbsp UofT iGEM</strong> <br><br>
+                   
+                    <strong>Blockchain Toolkit Intern </strong><a class="resume-point" href="">@BuildingBlocksTechnologies</a><br>
+                    <strong>ML Dev Internship </strong><a  class="resume-point" href="">@BenchSci</a><br>
+                    <strong>Dry Lab ML Engineer </strong><a class="resume-point"  href="">@UofT Protein-Design</a>
+                        <!-- March 2022 - Present</p> -->
+ 
+                </p>
+ 
+            </div>
+ 
+            <div></div>
+            <!-- <div style="margin-top: -16%; margin-left: 2%; border-top: 1px solid white;">
+                <div style="margin-top: -2%">
+               
+            </div>
+            </div> -->
+           
+           
+ 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+ 
+    <style>
+ 
+        body{
+            margin-left: 25%;
+            max-width: 1600px;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 230px 60%;
+        }
+ 
+        .wrapper div{
+            background-color: black;
+            padding: 2px;
+        }
+        .wrapper > div:nth-child(odd){
+            background: black;
+        }
+
+        .project-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 5px;
+            height: 100%;
+        }
+        
+        .project-item{
+            /* border: 1px solid white; */
+            padding: 10px;
+        }
+        .item-img{
+            height: 140px;
+            margin: auto;
+            display: block;
+        }
+
+        .item-title{
+            font-size: 15px;
+            text-align: center;
+            color: lightblue;
+        }
+
+    </style>
+</head>
+ 
+ 
+<script type="text/javascript">
+    var imageURLs = [
+        "https://wallpaperaccess.com/full/1363480.jpg",
+        "https://www.companyofpainters.com/wp-content/uploads/2016/04/creation_of_adam_1510_cappella_sistina_vatican.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Raphael_School_of_Athens.jpg"
+    ];
+ 
+    var imageDescriptions = [
+        "<i> The Romans in their Decadence </i> is a painting by the French artist Thomas Couture, first exhibited at the Paris Salon of 1847, a year before the 1848 Revolution which toppled the July Monarchy. It was the most highly praised work at the Salon. Reminiscent of the style of Raphael, it is typical of the French 'classic' style between 1850 and 1900. It now belongs to the Musée d'Orsay in Paris.[2] It was etched by Edmond Hédouin.",
+        "<i>The Creation of Adam</i> is a fresco painting by Italian artist Michelangelo, which forms part of the Sistine Chapel's ceiling, painted c. 1508–1512. It illustrates the Biblical creation narrative from the Book of Genesis in which God gives life to Adam, the first man. The fresco is part of a complex iconographic scheme and is chronologically the fourth in the series of panels depicting episodes from Genesis.",
+        "<i>The School of Athens</i> is one of a group of four main frescoes on the walls of the Stanza (those on either side centrally interrupted by windows) that depict distinct branches of knowledge. Each theme is identified above by a separate tondo containing a majestic female figure seated in the clouds, with putti bearing the phrases: 'Seek Knowledge of Causes', 'Divine Inspiration', 'Knowledge of Things Divine' (Disputa), 'To Each What Is Due'. Accordingly, the figures on the walls below exemplify philosophy, poetry (including music), theology, and justice."
+ 
+    ];
+ 
+ 
+    function getImageTag() {
+        var img = '<img class="terminal-cover" src=\"';
+        var randomIndex = Math.floor(Math.random() * imageURLs.length);
+        img += imageURLs[randomIndex];
+        img += '\" alt=\"Some alt text\"/>';
+ 
+        var descr =  '<p class="caption"> ';
+        descr += imageDescriptions[randomIndex];
+        descr += ' </p>';
+ 
+        document.write(img);
+        document.write(descr);
+    }
+ 
+ 
+</script>
+ 
+<html>
+    <body>
+        <div class="wrapper">
+            <div>
+                <img class="profile" src="https://avatars.githubusercontent.com/u/32529318?v=4">
+                <p class="great-big-title"> <strong style="text-decoration: underline"> Hello world.</strong> What is this world?</h1>
+                <ul class="nav">
+                    <li> <a href="grid-terminal.html">terminal.</a></li>
+                        <li> <a href="grid-biotech.html">biotech.</a></li>
+                        <li>machine_learning.</li>
+                        <li>writing.</li>
+                        <li>reading.</li>
+                        <li>crypto.</li>
+                        <li>world_order.</li>
+                        <li>videos.</li>
+                        <li>crypto.</li>
+                        <li>brain_feed.</li>
+                        <li> <a href="index.html">registry.</a></li>
+                        <li> <a href="grid-portfolio.html">portfolio.</a></li>
+           
+                </ul>
+ 
+                <p> <a class="socials" href="https://github.com/devpatelio/devpatelio/blob/main/README.md">Github</a> | <a class="socials" href="mailto@hello.devpatel@gmail.com">Email</a> | <a class="socials" href="https://twitter.com/dev_elio">Twtr</a> | <a class="socials" href="https://www.instagram.com/devpatelio/">Instgrm</a> | <a class="socials" href="https://calendly.com/devpatel-scheduling/meet-me">Calendly</a></p>
+ 
+            </div>
+ 
+ 
+            <div class='project-grid' style="margin-top: 0%; padding-left: 2%; background-color: black; color: white;">
+                <div class="project-item">
+                    <img class="item-img" src="https://camo.githubusercontent.com/50461aae14f0f98a909f9637a85803163b36d95943980b67e7876ff71017878c/68747470733a2f2f656e637279707465642d74626e302e677374617469632e636f6d2f696d616765733f713d74626e3a414e64394763516e697a6a5f732d54763658427836335258464a79503869343154487a6e5569724f363637526757746d4e6f554143432d6e436978423142425750684c3831337153574f4926757371703d434155">
+                    <h4 class="item-title">mRNA Conformations</h4>
+                </div>
+                <div class="project-item">
+                    <img class="item-img" src="https://camo.githubusercontent.com/9f8befe8a61a21b310ce9cfeb9243d9623f6d3b478dbd3c2a1f24a194af3320d/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f362f36662f42656e63685363695f4c6f676f2e706e67">
+                    <h4 class="item-title" style="color: white;">BenchSci Internship</h4>
+                </div>
+                <div class="project-item">
+                    <img class="item-img" src="https://avatars.githubusercontent.com/u/66800070?s=200&v=4">
+                    <h4 class="item-title" style="color: orange;">BBT Intern</h4>
+                </div>
+                <div class="project-item">
+                    <img class="item-img" src="https://cdn-images-1.medium.com/max/1600/0*zWwD9MrScmRjfXV8">
+                    <h4 class="item-title" style="color: rgb(171, 211, 171);">Neurohack GWAS Winner</h4>
+                </div>
+                <div class="project-item">
+                    <img class="item-img" src="https://camo.githubusercontent.com/e566f6cd46d0e905ba254ff5a7540299e72be3ffb1229831c1eb73604f4d6373/68747470733a2f2f6d656469612e6e70722e6f72672f6173736574732f696d672f323031362f31312f31312f6d696e692d627261696e2d322d303262313739336164386535303637366164353031633630623334383964353630336361356265372e6a7067">
+                    <h4 class="item-title" style="color: rgb(190, 67, 36);">Neurodegenerative Disorder Target Discovery</h4>
+                </div>
+                <div class="project-item">
+                    <img class="item-img" src="https://camo.githubusercontent.com/c52b1e40e233c4f278d8d9389eb0d9b609e67fd62be5d1623116bbd075680dec/68747470733a2f2f736378322e622d63646e2e6e65742f6766782f6e6577732f68697265732f323031372f686f777265636570746f72732e6a7067">
+                    <h4 class="item-title" style="color: magenta;">Mechanism of Action Classification</h4>
+                </div>
+                <div class="project-item">
+                    <img class="item-img" src="https://camo.githubusercontent.com/0967837f5dc7fdfcae215b4e8f1f0a82b4125465f5adb4470a8eb1fccdabeae2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a3247436a71554732497136516b65634c76786b374e672e706e67">
+                    <h4 class="item-title" style="color: rgb(93, 93, 192);">Bioinformatics Repository</h4>
+                </div>
+                <!-- <div class="project-item">
+                    <img class="item-img" src="https://camo.githubusercontent.com/2875dc18e7c8b5270bb97b931b57d0466875978863f5e8396660b8bf3e068834/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f302a544b6b452d79433648325842773066502e6a7067">
+                    <h4 class="item-title" style="color: rgb(0, 162, 255);">Project Bluesky</h4>
+                </div>        -->
+                <div class="project-item">
+                    <img class="item-img" src="https://camo.githubusercontent.com/8f0f26b68e185723dc4cc23e635f634120577b51c39abf807d3d66ecc25a3ce1/68747470733a2f2f656e637279707465642d74626e302e677374617469632e636f6d2f696d616765733f713d74626e3a414e64394763527a51547a6576493270766677385f6d6c74774d435f59365a6354544f67797863375f5126757371703d434155">
+                    <h4 class="item-title" style="color: rgb(218, 179, 51);">scRNA-Seq for Lymphoma</h4>
+                </div>              
+                
+              
+            </div>
+           
+ 
+        </div>
+    </body>
+</html>
